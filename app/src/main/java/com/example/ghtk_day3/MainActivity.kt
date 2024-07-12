@@ -14,5 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.mainNavHostFragment) as NavHostFragment
         val navController = navHostFragment.navController
+        navController.navigate(R.id.action_firstFragment_to_secondFragment)
     }
 }

@@ -87,12 +87,12 @@ class SecondFragment : Fragment() {
                 val s2:Float=tinhDienTich(xx,yx,xa,ya,xc,yc)
                 val s3:Float=tinhDienTich(xx,yx,xb,yb,xc,yc)
                 if(s==(s1+s2+s3)){
-                    binding.tvResult2.text="Diem x nam trong tam giac ABC"
+                    binding.tvResult2.text="Điểm X nằm trong tam giác ABC"
                 }else{
-                    binding.tvResult2.text="Diem x nam ngoai tam giac ABC"
+                    binding.tvResult2.text="Điểm X nằm ngoài tam giác ABC"
                 }
             } catch (e: NumberFormatException) {
-                Toast.makeText(requireContext(), "Vui long nhap vao dung so", Toast.LENGTH_SHORT)
+                Toast.makeText(requireContext(), "Vui lòng nhập vào ô trống đúng định dạng", Toast.LENGTH_SHORT)
                     .show()
             }
 

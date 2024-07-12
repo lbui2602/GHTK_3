@@ -74,7 +74,7 @@ class FirstFragment : Fragment() {
         binding.btnSubmit.setOnClickListener {
             val str=binding.editText.text.toString().trim()
             if(str.length==0){
-                Toast.makeText(requireContext(),"Please fill out the box", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(),"Vui lòng nhập kí tự vào ô trống!", Toast.LENGTH_SHORT).show()
             }else{
                 val count=count(str)
                 var result : String=""
